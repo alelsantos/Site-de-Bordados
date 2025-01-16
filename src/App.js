@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ProductCard from './components/ProductCard/ProductCard';
@@ -15,7 +16,20 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <h1>Produtos</h1>
+        <nav className="nav-bar">
+          <div className="navbar-content">
+            <div className="navbar-item">
+              <i className="fab fa-facebook"></i> Maelu Bordados
+            </div>
+            <div className="navbar-item">
+              <i className="fab fa-instagram"></i> @maelubordados
+            </div>
+            <div className="navbar-item">
+              <i className="fab fa-whatsapp"></i> (19) 99735-5489
+            </div>
+          </div>
+        </nav>
+        <h1>PRODUTOS</h1>
         <div className="product-grid">
           {products.map(product => (
             <ProductCard key={product.id} product={product} />

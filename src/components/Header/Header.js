@@ -14,9 +14,10 @@ function Header() {
         <button className="menu-button" onClick={toggleMenu}>
           <i className="fas fa-bars"></i>
         </button>
-        <div className="brand-titule">
-          <h1>MaeLu Bordados</h1>
-          <div className="brand">
+        
+        <div className="brand-title">
+          <h1>MAELU BORDADOS</h1>
+          <div className="brand-subtitle">
           <h1>Bordados personalizados e feitos com muito amor!</h1>
         </div>
         </div>
@@ -24,7 +25,7 @@ function Header() {
           <i className="fas fa-shopping-cart"></i>
         </div>
       </div>
-      <nav className={`sidebar  ${isMenuOpen ? 'open' : ''}` }>
+      <nav className={`sidebar  ${isMenuOpen ? 'open' : ''}`  }>
         <ul>
           <li><a href="#">Bordados</a></li>
           <li><a href="#">Bory bebê</a></li>
@@ -37,6 +38,8 @@ function Header() {
           <li><a href="#">Últimos lançamentoscls</a></li>
         </ul>
       </nav>
+
+      
     </header>
   );
 }
